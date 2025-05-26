@@ -1,0 +1,232 @@
+/* src/assets/styles/Timeline.scss */
+
+.items-container {
+  padding: 5% 10%;
+  text-align: center;
+  background-color: transparent; /* Allow parent container to control background */
+  transition: background-color 0.3s ease;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ffffff; /* White for dark mode */
+    font-weight: 700;
+  }
+}
+
+/* Light mode adjustments */
+.light-mode .items-container {
+  h1 {
+    color: #121212; /* Dark text for light mode */
+  }
+}
+
+/* Timeline container */
+.vertical-timeline {
+  padding: 0;
+  margin: 0;
+
+  /* Timeline line */
+  &::before {
+    background: #e0e0e0; /* Light gray line */
+    transition: background 0.3s ease;
+  }
+
+  .light-mode &::before {
+    background: #666; /* Darker line for light mode */
+  }
+}
+
+/* Timeline element base styles */
+.vertical-timeline-element {
+  margin: 2em 0;
+
+  .vertical-timeline-element-content {
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px); /* Lift effect on hover */
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Arrow */
+    .vertical-timeline-element-content-arrow {
+      border-right-color: rgba(255, 255, 255, 0.95) !important;
+    }
+  }
+
+  .vertical-timeline-element-date {
+    color: #ffffff; /* White for dark mode */
+    font-family: 'Courier Prime', monospace;
+    font-size: 1em;
+    font-weight: 500;
+    opacity: 1;
+  }
+
+  h3 {
+    color: #121212; /* Dark text */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    color: #121212;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #121212;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0 0;
+
+    li {
+      color: #121212;
+      font-size: 1em;
+      margin-bottom: 5px;
+    }
+  }
+
+  /* Icon styling */
+  .vertical-timeline-element-icon {
+    background: #5000ca !important; /* Template’s primary color */
+    box-shadow: 0 0 0 4px #e0e0e0, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .svg-inline--fa {
+      color: #ffffff; /* White icon */
+      font-size: 1.5em;
+    }
+  }
+}
+
+/* Light mode element adjustments */
+.light-mode .vertical-timeline-element {
+  .vertical-timeline-element-content {
+    background: #f5f5f5; /* Light background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    .vertical-timeline-element-content-arrow {
+      border-right-color: #f5f5f5 !important;
+    }
+  }
+
+  .vertical-timeline-element-date {
+    color: #121212; /* Dark text for light mode */
+  }
+
+  .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #666, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Specific classes */
+.vertical-timeline-element--work,
+.education,
+.skills {
+  .vertical-timeline-element-title,
+  .element-title {
+    font-weight: 600;
+  }
+
+  .element-subtitle {
+    font-weight: 400;
+  }
+}
+
+/* Responsive design */
+@media screen and (max-width: 1170px) {
+  .items-container {
+    padding: 5% 5%;
+  }
+
+  .vertical-timeline-element {
+    .vertical-timeline-element-date {
+      color: #121212; /* Dark text for visibility */
+      font-size: 0.95em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .items-container {
+    padding: 5% 3%;
+
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+  .vertical-timeline-element {
+    h3 {
+      font-size: 1.5em;
+    }
+
+    h4 {
+      font-size: 1.2em;
+    }
+
+    p,
+    ul li {
+      font-size: 0.95em;
+    }
+
+    .vertical-timeline-element-content {
+      padding: 15px;
+    }
+
+    .vertical-timeline-element-date {
+      font-size: 0.9em;
+    }
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .items-container {
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+
+  .vertical-timeline-element {
+    h3 {
+      font-size: 1.3em;
+    }
+
+    h4 {
+      font-size: 1.1em;
+    }
+
+    p,
+    ul li {
+      font-size: 0.9em;
+    }
+
+    .vertical-timeline-element-content {
+      padding: 12px;
+    }
+
+    .vertical-timeline-element-date {
+      font-size: 0.85em;
+    }
+
+    .vertical-timeline-element-icon {
+      .svg-inline--fa {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

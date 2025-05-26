@@ -1,0 +1,207 @@
+/* src/assets/styles/Expertise.scss */
+
+.skills-container {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: transparent; /* Allow parent container to control background */
+  transition: background-color 0.3s ease;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff; /* White for dark mode */
+    text-align: center;
+    font-weight: 700;
+  }
+
+  svg {
+    color: #ffffff; /* White icon for dark mode */
+    transition: color 0.3s ease;
+  }
+}
+
+/* Light mode adjustments */
+.light-mode .skills-container {
+  h1 {
+    color: #121212; /* Dark text for light mode */
+  }
+
+  svg {
+    color: #5000ca; /* Template’s primary color */
+  }
+}
+
+.skills-container .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 40px;
+  justify-items: center;
+}
+
+.skills-container .skills-grid .skill {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle card background (dark mode) */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  h3 {
+    font-size: 1.8em;
+    margin: 15px 0;
+    color: #ffffff; /* White for dark mode */
+  }
+
+  p {
+    font-size: 1em;
+    color: #e0e0e0; /* Light gray for readability */
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+}
+
+/* Light mode card adjustments */
+.light-mode .skills-container .skills-grid .skill {
+  background-color: #f5f5f5; /* Light card background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    color: #121212; /* Dark text */
+  }
+
+  p {
+    color: #666; /* Darker gray for light mode */
+  }
+}
+
+.chip {
+  background-color: #ffffff !important; /* White chip background */
+  color: #121212 !important; /* Dark text */
+  font-size: 0.85rem !important;
+  height: 28px !important;
+  margin: 5px;
+  font-family: 'Courier Prime', monospace;
+  border-radius: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: #e0e0e0 !important; /* Light gray on hover */
+    transform: scale(1.05); /* Slight scale effect */
+  }
+
+  span {
+    color: #121212;
+  }
+
+  svg {
+    height: 16px !important;
+    color: #5000ca; /* Primary color for icons */
+  }
+}
+
+.flex-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+
+  .chip-title {
+    color: #ffffff; /* White for dark mode */
+    font-size: 1em;
+    font-weight: 500;
+  }
+}
+
+.light-mode .flex-chips .chip-title {
+  color: #121212; /* Dark text for light mode */
+}
+
+.download-cv {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #5000ca; /* Template’s primary color */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: #3c008f; /* Darker shade on hover */
+    transform: translateY(-2px);
+  }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .skills-container {
+    padding: 5% 5%;
+    text-align: center;
+
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+  .skills-container .skills-grid {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 30px;
+  }
+
+  .skills-container .skills-grid .skill {
+    padding: 15px;
+
+    h3 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 0.95em;
+    }
+  }
+
+  .download-cv {
+    padding: 8px 16px;
+    font-size: 0.95em;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .skills-container {
+    padding: 5% 3%;
+
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+
+  .skills-container .skills-grid .skill {
+    h3 {
+      font-size: 1.3em;
+    }
+
+    p {
+      font-size: 0.9em;
+    }
+  }
+
+  .chip {
+    font-size: 0.75rem !important;
+    height: 24px !important;
+  }
+
+  .flex-chips .chip-title {
+    font-size: 0.9em;
+  }
+}

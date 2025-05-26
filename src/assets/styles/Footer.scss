@@ -1,0 +1,91 @@
+/* src/assets/styles/Footer.scss */
+
+footer {
+  text-align: center;
+  padding: 50px 10%;
+  background-color: transparent; /* Allow parent background */
+  transition: background-color 0.3s ease;
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    a {
+      color: #ffffff; /* White for dark mode */
+      transition: color 0.3s ease, transform 0.2s ease;
+
+      &:hover {
+        color: #5000ca; /* Template’s primary color */
+        transform: scale(1.2); /* Slight scale effect */
+      }
+
+      svg {
+        width: 1.5em !important; /* Larger icons */
+        height: 1.5em !important;
+      }
+    }
+  }
+
+  p {
+    font-size: 0.9em;
+    color: #e0e0e0; /* Light gray for dark mode */
+    margin: 0;
+    font-weight: 400;
+  }
+}
+
+/* Light mode adjustments */
+.light-mode footer {
+  .social-icons a {
+    color: #121212; /* Dark icons for light mode */
+
+    &:hover {
+      color: #5000ca;
+    }
+  }
+
+  p {
+    color: #666; /* Darker gray */
+  }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 40px 5%;
+
+    .social-icons {
+      gap: 15px;
+
+      svg {
+        width: 1.3em !important;
+        height: 1.3em !important;
+      }
+    }
+
+    p {
+      font-size: 0.85em;
+    }
+  }
+}
+
+@media screen and (max-width: 567px) {
+  footer {
+    padding: 30px 3%;
+
+    .social-icons {
+      gap: 10px;
+
+      svg {
+        width: 1.2em !important;
+        height: 1.2em !important;
+      }
+    }
+
+    p {
+      font-size: 0.8em;
+    }
+  }
+}
