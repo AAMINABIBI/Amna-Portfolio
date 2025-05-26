@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Amna-Portfolio/static/css/main.77ce8837.css",
+    "main.css": "/Amna-Portfolio/static/css/main.9cea4dfc.css",
     "main.js": "/Amna-Portfolio/static/js/main.b429ee49.js",
     "static/media/mock04.png": "/Amna-Portfolio/static/media/mock04.f7b5679efade992a078c.png",
     "static/media/mock05.png": "/Amna-Portfolio/static/media/mock05.4faafa70d200d1519a34.png",
@@ -11,11 +11,11 @@
     "static/media/E-commProj.png": "/Amna-Portfolio/static/media/E-commProj.5114b78c15eb57d45b2f.png",
     "static/media/amnaLogo.jpg": "/Amna-Portfolio/static/media/amnaLogo.7dc736fc14255072e000.jpg",
     "index.html": "/Amna-Portfolio/index.html",
-    "main.77ce8837.css.map": "/Amna-Portfolio/static/css/main.77ce8837.css.map",
+    "main.9cea4dfc.css.map": "/Amna-Portfolio/static/css/main.9cea4dfc.css.map",
     "main.b429ee49.js.map": "/Amna-Portfolio/static/js/main.b429ee49.js.map"
   },
   "entrypoints": [
-    "static/css/main.77ce8837.css",
+    "static/css/main.9cea4dfc.css",
     "static/js/main.b429ee49.js"
   ]
 }
