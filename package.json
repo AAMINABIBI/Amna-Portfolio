@@ -2,7 +2,7 @@
   "name": "react-portfolio-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yujisatojr.github.io/react-portfolio-template",
+  "homepage": "https://aaminabibi.github.io/Amna-Portfolio",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.11.4",
@@ -24,12 +24,9 @@
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "react-vertical-timeline-component": "^3.6.0",
-    "sass": "^1.77.4",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-
-  "homepage": "https://aaminabibi.github.io/Amna-Portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -58,6 +55,7 @@
   },
   "devDependencies": {
     "@types/react-vertical-timeline-component": "^3.3.6",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "sass": "^1.89.0"
   }
 }

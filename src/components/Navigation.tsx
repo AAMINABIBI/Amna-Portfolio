@@ -17,7 +17,7 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import { INFO } from '../data/user';
-
+import '../assets/styles/Navigation.scss'
 const drawerWidth = 240;
 const navItems = [
   ['Home', 'main'],
