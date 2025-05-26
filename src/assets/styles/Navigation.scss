@@ -1,0 +1,95 @@
+/* src/assets/styles/Navigation.scss */
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* Purple background for AppBar */
+.navbar-fixed-top {
+  background-color: #6a1b9a !important; /* Deep purple */
+  transition: background-color 0.3s ease;
+
+  &.scrolled {
+    background-color: rgba(106, 27, 154, 0.9) !important; /* Slightly transparent purple when scrolled */
+  }
+}
+
+/* Mobile drawer styling */
+.navigation-bar-responsive {
+  padding: 24px;
+  background-color: #6a1b9a; /* Match purple theme */
+  color: #ffffff;
+  min-height: 100vh; /* Full height for better mobile experience */
+}
+
+.mobile-menu-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Drawer list items */
+.MuiDrawer-paper {
+  background-color: #6a1b9a !important; /* Purple background for drawer */
+  color: #ffffff;
+}
+
+.MuiListItemButton-root {
+  padding: 12px 24px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #8e24aa; /* Lighter purple on hover */
+  }
+}
+
+.MuiListItemText-primary {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Desktop buttons */
+.MuiButton-root {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  text-transform: none;
+  color: #ffffff !important;
+
+  &:hover {
+    background-color: #8e24aa; /* Lighter purple on hover */
+  }
+}
+
+/* Dark/light mode icon */
+.MuiIconButton-root {
+  color: #ffffff !important;
+}
+
+/* Ensure toolbar alignment */
+.MuiToolbar-root {
+  justify-content: space-between;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .navigation-bar {
+    padding: 0 8px;
+  }
+
+  .mobile-menu-top {
+    font-size: 1rem;
+  }
+
+  .MuiListItemButton-root {
+    padding: 10px 16px;
+  }
+
+  .MuiListItemText-primary {
+    font-size: 1rem;
+  }
+}
