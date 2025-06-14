@@ -1,30 +1,28 @@
 export const INFO = {
   main: {
     name: "Aamina Bibi",
-    title: "Front-end Web Developer",
-    description:
-      "Hi, I'm Aamina Bibi, a passionate Front-end Web Developer skilled in crafting user-friendly and visually appealing websites using HTML, CSS, JavaScript, and React. I love turning ideas into reality through clean code and creative design.",
+    title: "Software Engineer",
     email: "aaminabibi@gmail.com",
-    avatar: "/assets/images/amnaLogo.jpg", // Updated path
+    avatar: "/assets/images/amnaLogo.jpg",
+    resumeLink: "/assets/Aamina_Bibi_CV.pdf", // Added resume link for Download Resume button
   },
   socials: {
     github: "https://github.com/aaminabibi",
-    linkedin: "https://www.linkedin.com/in/aamina-bibi-9a0b042b9/",
-    instagram: "https://www.instagram.com/aamina_bibi/",
+    linkedin: "https://www.linkedin.com/in/aamina-bibi/",
+    whatsapp: "https://wa.me/923709367710", // Added WhatsApp link
   },
- // src/data/user.ts (relevant section)
-about: {
-  title: "About Me",
-  description:
-    "I am a Front-end Web Developer with a passion for creating interactive and responsive web applications. My expertise includes HTML, CSS, JavaScript, and React, with a strong focus on delivering seamless user experiences. I graduated with a Bachelor’s degree in Computer Science from the University of Sargodha and have worked on various projects, including e-commerce platforms and portfolio websites.",
-  cvLink: "/assets/Aamina_Bibi_CV.pdf",
-  skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap", "Git & GitHub"],
-},
+  about: {
+    title: "About Me",
+    description:
+      "I am a Front-end Web Developer with a passion for creating interactive and responsive web applications. My expertise includes HTML, CSS, JavaScript, and React, with a strong focus on delivering seamless user experiences. I graduated with a Bachelor’s degree in Computer Science from the University of Sargodha and have worked on various projects, including e-commerce platforms and portfolio websites.",
+    cvLink: "/assets/Aamina_Bibi_CV.pdf",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap", "Git & GitHub"],
+  },
   resume: {
     education: [
       {
         degree: "Bachelor’s in Computer Science",
-        institution: "Rawalpindi Women Uniersity",
+        institution: "Rawalpindi Women University",
         period: "2021-2025",
       },
     ],
@@ -32,15 +30,14 @@ about: {
       {
         role: "MERN Stack Intern (Innvarionix)",
         period: "April 2025 - Present",
-        description: "Developed responsive websites and web applications using React along wih firebase integration",
+        description: "Developed responsive websites and web applications using React along with Firebase integration",
       },
-       {
+      {
         role: "React Native Intern (E-Tree Soln.)",
         period: "April 2025 - Present",
-        description: "Developed responsive websites and web applications using React along wih firebase integration",
+        description: "Developed responsive websites and web applications using React along with Firebase integration",
       },
     ],
-
   },
   projects: [
     {
@@ -58,14 +55,12 @@ about: {
       link: "https://github.com/aaminabibi/ecommerce-project",
     },
     {
-      title: "FreeLancer's portfolio Website",
+      title: "FreeLancer's Portfolio Website",
       description:
-        "Developed a fully functional Freelancer's Portfolio website with Header,Skills,Projects,Testoimonials ,Footer integration using HTML, CSS, and JavaScript.",
+        "Developed a fully functional Freelancer's Portfolio website with Header, Skills, Projects, Testimonials, Footer integration using HTML, CSS, and JavaScript.",
       image: "/assets/images/calculator.png",
       link: "https://github.com/aaminabibi/ecommerce-project",
     },
-  
-    
   ],
   contact: {
     title: "Contact Me",
@@ -75,4 +70,3 @@ about: {
     copyright: "© 2025 Aamina Bibi. All rights reserved.",
   },
 };
-

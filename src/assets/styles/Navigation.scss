@@ -1,64 +1,68 @@
 /* src/assets/styles/Navigation.scss */
 .navbar-fixed-top {
   background-color: #6a1b9a; /* Vibrant purple */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
+}
 
-  &.scrolled {
-    background-color: #4a148c; /* Darker purple when scrolled */
-  }
+.navbar-fixed-top.scrolled {
+  background-color: #4a148c; /* Darker purple when scrolled */
 }
 
 .navigation-bar {
   display: flex;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 
 /* Mobile drawer */
 .MuiDrawer-paper {
-  background-color: #6a1b9a; /* Purple drawer */
+  background-color: #6a1b9a;
   color: #ffffff;
-  width: 260px;
-  padding: 20px;
+  width: 280px; /* Wider for elegance */
+  padding: 24px;
+  border-radius: 0 20px 20px 0; /* Rounded edge */
 }
 
 .navigation-bar-responsive {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 .mobile-menu-top {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.3rem;
-  font-weight: bold;
-  padding: 10px 0;
+  gap: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 15px 0;
+  border-bottom: 1px solid #8e24aa;
 }
 
 .MuiListItemButton-root {
-  border-radius: 8px;
-  padding: 12px 16px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 10px;
+  padding: 14px 20px;
+  transition: all 0.3s ease;
 
   &:hover {
-    background-color: #8e24aa; /* Lighter purple hover */
-    transform: translateX(5px); /* Subtle slide effect */
+    background-color: #8e24aa; /* Lighter purple */
+    transform: scale(1.02); /* Subtle zoom */
   }
 }
 
 .MuiListItemText-primary {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 /* Desktop buttons */
 .MuiButton-root {
-  color: #ffffff;
-  font-size: 1rem;
-  padding: 8px 12px;
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  padding: 10px 15px;
   text-transform: none;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: #8e24aa;
@@ -67,16 +71,24 @@
 
 /* Icons */
 .MuiIconButton-root {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 /* Mobile adjustments */
 @media (max-width: 600px) {
   .navigation-bar {
-    padding: 0 8px;
+    padding: 0 10px;
   }
 
   .mobile-menu-top {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  .MuiListItemButton-root {
+    padding: 12px 16px;
+  }
+
+  .MuiListItemText-primary {
+    font-size: 1.1rem;
   }
 }

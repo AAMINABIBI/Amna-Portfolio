@@ -16,7 +16,7 @@ function Footer() {
         <a href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
           <LinkedInIcon />
         </a>
-        <a href={INFO.socials.instagram} target="_blank" rel="noreferrer">
+        <a href={INFO.socials.whatsapp} target="_blank" rel="noreferrer">
           <InstagramIcon />
         </a>
       </div>
