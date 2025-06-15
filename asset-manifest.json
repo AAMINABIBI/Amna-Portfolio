@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Amna-Portfolio/static/css/main.bf81c8b6.css",
-    "main.js": "/Amna-Portfolio/static/js/main.35d0b83c.js",
-    "static/media/me2.jpeg": "/Amna-Portfolio/static/media/me2.e335165f96778aee8602.jpeg",
+    "main.js": "/Amna-Portfolio/static/js/main.3789f7ff.js",
+    "static/media/me3.png": "/Amna-Portfolio/static/media/me3.a0f464cc74d4fda1dd39.png",
     "static/media/mock04.png": "/Amna-Portfolio/static/media/mock04.f7b5679efade992a078c.png",
     "static/media/mock05.png": "/Amna-Portfolio/static/media/mock05.4faafa70d200d1519a34.png",
     "static/media/Freelancers_portfolio.png": "/Amna-Portfolio/static/media/Freelancers_portfolio.0d10caaea625a3862a2c.png",
@@ -13,10 +13,10 @@
     "static/media/amnaLogo.jpg": "/Amna-Portfolio/static/media/amnaLogo.7dc736fc14255072e000.jpg",
     "index.html": "/Amna-Portfolio/index.html",
     "main.bf81c8b6.css.map": "/Amna-Portfolio/static/css/main.bf81c8b6.css.map",
-    "main.35d0b83c.js.map": "/Amna-Portfolio/static/js/main.35d0b83c.js.map"
+    "main.3789f7ff.js.map": "/Amna-Portfolio/static/js/main.3789f7ff.js.map"
   },
   "entrypoints": [
     "static/css/main.bf81c8b6.css",
-    "static/js/main.35d0b83c.js"
+    "static/js/main.3789f7ff.js"
   ]
 }
