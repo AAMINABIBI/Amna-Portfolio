@@ -1,9 +1,13 @@
+// src/data/user.ts
+import amnaAvatar from '../assets/images/me2.jpeg'; // <-- NEW: Import your image here
+
 export const INFO = {
   main: {
     name: "Aamina Bibi",
     title: "Software Engineer",
     email: "aaminabibi@gmail.com",
-    avatar: "/assets/images/amnaLogo.jpg",
+    // avatar: "/assets/images/amnaLogo.jpg", // <-- OLD: Remove this line
+    avatar: amnaAvatar, // <-- NEW: Use the imported image
     resumeLink: "/assets/Aamina_Bibi_CV.pdf", // Added resume link for Download Resume button
   },
   socials: {
@@ -13,10 +17,17 @@ export const INFO = {
   },
   about: {
     title: "About Me",
-    description:
-      "I am a Front-end Web Developer with a passion for creating interactive and responsive web applications. My expertise includes HTML, CSS, JavaScript, and React, with a strong focus on delivering seamless user experiences. I graduated with a Bachelor’s degree in Computer Science from the University of Sargodha and have worked on various projects, including e-commerce platforms and portfolio websites.",
+    description: `
+      Welcome to my corner of the web! I'm Aamina Bibi, a BSCS graduate who lives and breathes <span style="color:rgb(197, 140, 213); font-weight: bold;">software development</span>, with a particular fascination for <span style="color: rgb(197, 140, 213); font-weight: bold;">Artificial Intelligence</span>.
+      <ul>
+        <li>From architecting <span style="color: rgb(197, 140, 213); font-weight: bold;">robust MERN-Stack applications</span> to diving deep into <span style="color:rgb(197, 140, 213); font-weight: bold;">machine learning concepts</span> for real-world AI challenges, I thrive on bringing <span style="color:rgb(197, 140, 213); font-weight: bold;">innovative ideas to life</span>.</li>
+        <li>My journey is marked by a blend of <span style="color: rgb(197, 140, 213); font-weight: bold;">technical prowess</span> in Python, React, and Node.js, and a <span style="color: rgb(197, 140, 213); font-weight: bold;">proven adaptability</span> that fuels <span style="color:rgb(197, 140, 213); font-weight: bold;">continuous learning</span>.</li>
+        <li>I'm not just a developer; I'm a <span style="color:rgb(197, 140, 213); font-weight: bold;">problem-solver</span>, a <span style="color:rgb(197, 140, 213); font-weight: bold;">collaborator</span>, and a <span style="color:rgb(197, 140, 213); font-weight: bold;">creator</span> excited to build the future, one intelligent application at a time.</li>
+      </ul>
+      <span style="color:rgb(192, 137, 207); font-weight: bold;">Ready to build something brilliant? Let's connect and create the next big thing!</span>
+    `,
     cvLink: "/assets/Aamina_Bibi_CV.pdf",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap", "Git & GitHub"],
+    skills: ["JavaScript", "React", "Node.js","Python","HTML", "CSS","Bootstrap",,"MongoDB ","Firebase","C#","C/C++ ","SQL ","Git & GitHub","Canva" ],
   },
   resume: {
     education: [
