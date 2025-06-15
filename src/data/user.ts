@@ -1,5 +1,5 @@
 // src/data/user.ts
-import amnaAvatar from '../assets/images/me2.jpeg'; // <-- NEW: Import your image here
+import amnaAvatar from '../assets/images/me3.png'; // <-- NEW: Import your image here
 
 export const INFO = {
   main: {
