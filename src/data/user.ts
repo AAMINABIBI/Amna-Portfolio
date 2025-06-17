@@ -72,6 +72,48 @@ export const INFO = {
       image: "/assets/images/calculator.png",
       link: "https://github.com/aaminabibi/ecommerce-project",
     },
+     {
+      title: "Calculator",
+      description:
+        "Lip CoordNet is an innovative app that uses AI to analyze lip movements in real-time, enabling precise lip-reading and gesture-based communication for enhanced accessibility and interaction.",
+      image: "/assets/images/calculator.png",
+      link: "https://github.com/aaminabibi/ecommerce-project",
+    },
+     {
+      title: "EasyPaisa App",
+      description:
+        "Lip CoordNet is an innovative app that uses AI to analyze lip movements in real-time, enabling precise lip-reading and gesture-based communication for enhanced accessibility and interaction.",
+      image: "/assets/images/calculator.png",
+      link: "https://github.com/aaminabibi/ecommerce-project",
+    },
+     {
+      title: "To Do App",
+      description:
+        "Lip CoordNet is an innovative app that uses AI to analyze lip movements in real-time, enabling precise lip-reading and gesture-based communication for enhanced accessibility and interaction.",
+      image: "/assets/images/calculator.png",
+      link: "https://github.com/aaminabibi/ecommerce-project",
+    },
+     {
+      title: "CodeCraft AI",
+      description:
+        "Lip CoordNet is an innovative app that uses AI to analyze lip movements in real-time, enabling precise lip-reading and gesture-based communication for enhanced accessibility and interaction.",
+      image: "/assets/images/calculator.png",
+      link: "https://github.com/aaminabibi/ecommerce-project",
+    },
+     {
+      title: "Shine Point Health",
+      description:
+        "Lip CoordNet is an innovative app that uses AI to analyze lip movements in real-time, enabling precise lip-reading and gesture-based communication for enhanced accessibility and interaction.",
+      image: "/assets/images/calculator.png",
+      link: "https://github.com/aaminabibi/ecommerce-project",
+    },
+     {
+      title: "Fitness App Admin Panel",
+      description:
+        "Lip CoordNet is an innovative app that uses AI to analyze lip movements in real-time, enabling precise lip-reading and gesture-based communication for enhanced accessibility and interaction.",
+      image: "/assets/images/calculator.png",
+      link: "https://github.com/aaminabibi/ecommerce-project",
+    },
   ],
   contact: {
     title: "Contact Me",
