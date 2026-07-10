@@ -5,7 +5,6 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp'; // Added WhatsApp icon
 import { Button } from '@mui/material';
 import Typed from 'typed.js';
 import { INFO } from '../data/user';
-import amnaLogo from '../assets/images/amnaLogo.jpg';
 import '../assets/styles/Main.scss';
 
 function Home() {
@@ -31,7 +30,7 @@ function Home() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src={amnaLogo} alt="Aamina Bibi Avatar" />
+          <img src={INFO.main.avatar} alt="Aamina Bibi" />
         </div>
         <div className="content">
           <div className="social_icons">
