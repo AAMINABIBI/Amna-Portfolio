@@ -1,39 +1,27 @@
 /* src/assets/styles/Timeline.scss */
 
 .items-container {
-  padding: 5% 10%;
+  padding: 100px 10% 5%;
   text-align: center;
-  background-color: transparent; /* Allow parent container to control background */
-  transition: background-color 0.3s ease;
+  background-color: transparent;
 
   h1 {
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #ffffff; /* White for dark mode */
+    color: var(--text-hi);
     font-weight: 700;
   }
 }
 
-/* Light mode adjustments */
-.light-mode .items-container {
-  h1 {
-    color: #121212; /* Dark text for light mode */
-  }
-}
-
-/* Timeline container */
+/* Timeline line */
 .vertical-timeline {
   padding: 0;
   margin: 0;
 
-  /* Timeline line */
   &::before {
-    background: #e0e0e0; /* Light gray line */
-    transition: background 0.3s ease;
-  }
-
-  .light-mode &::before {
-    background: #666; /* Darker line for light mode */
+    background: linear-gradient(var(--cyan), var(--violet));
+    opacity: 0.35;
   }
 }
 
@@ -42,48 +30,45 @@
   margin: 2em 0;
 
   .vertical-timeline-element-content {
-    background: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    padding: 22px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--line);
 
     &:hover {
-      transform: translateY(-5px); /* Lift effect on hover */
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Arrow */
-    .vertical-timeline-element-content-arrow {
-      border-right-color: rgba(255, 255, 255, 0.95) !important;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(94, 234, 212, 0.12);
     }
   }
 
   .vertical-timeline-element-date {
-    color: #ffffff; /* White for dark mode */
-    font-family: 'Courier Prime', monospace;
-    font-size: 1em;
+    color: var(--text-mid) !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.95em;
     font-weight: 500;
     opacity: 1;
   }
 
   h3 {
-    color: #121212; /* Dark text */
-    font-size: 1.8em;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5em;
     margin-bottom: 10px;
+    color: var(--text-hi);
   }
 
   h4 {
-    color: #121212;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-bottom: 10px;
+    color: var(--cyan);
+    font-weight: 500;
   }
 
   p {
-    color: #121212;
-    font-size: 1em;
-    line-height: 1.6;
+    font-size: 0.98em;
+    line-height: 1.65;
     margin: 0;
+    color: var(--text-mid);
   }
 
   ul {
@@ -92,44 +77,23 @@
     margin: 10px 0 0;
 
     li {
-      color: #121212;
-      font-size: 1em;
+      font-size: 0.98em;
       margin-bottom: 5px;
+      color: var(--text-mid);
     }
   }
 
   /* Icon styling */
   .vertical-timeline-element-icon {
-    background: #5000ca !important; /* Template’s primary color */
-    box-shadow: 0 0 0 4px #e0e0e0, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 4px var(--bg-void), 0 0 16px rgba(94, 234, 212, 0.35);
     display: flex;
     align-items: center;
     justify-content: center;
 
     .svg-inline--fa {
-      color: #ffffff; /* White icon */
-      font-size: 1.5em;
+      color: #04120f;
+      font-size: 1.4em;
     }
-  }
-}
-
-/* Light mode element adjustments */
-.light-mode .vertical-timeline-element {
-  .vertical-timeline-element-content {
-    background: #f5f5f5; /* Light background */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-    .vertical-timeline-element-content-arrow {
-      border-right-color: #f5f5f5 !important;
-    }
-  }
-
-  .vertical-timeline-element-date {
-    color: #121212; /* Dark text for light mode */
-  }
-
-  .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 4px #666, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -144,60 +108,23 @@
 
   .element-subtitle {
     font-weight: 400;
+    color: var(--cyan);
   }
 }
 
-/* Responsive design */
+/* Responsive */
 @media screen and (max-width: 1170px) {
   .items-container {
-    padding: 5% 5%;
-  }
-
-  .vertical-timeline-element {
-    .vertical-timeline-element-date {
-      color: #121212; /* Dark text for visibility */
-      font-size: 0.95em;
-    }
+    padding: 90px 5% 5%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .items-container {
-    padding: 5% 3%;
+    padding: 80px 3% 5%;
 
     h1 {
       font-size: 2em;
-    }
-  }
-
-  .vertical-timeline-element {
-    h3 {
-      font-size: 1.5em;
-    }
-
-    h4 {
-      font-size: 1.2em;
-    }
-
-    p,
-    ul li {
-      font-size: 0.95em;
-    }
-
-    .vertical-timeline-element-content {
-      padding: 15px;
-    }
-
-    .vertical-timeline-element-date {
-      font-size: 0.9em;
-    }
-  }
-}
-
-@media screen and (max-width: 567px) {
-  .items-container {
-    h1 {
-      font-size: 1.8em;
     }
   }
 
@@ -207,7 +134,7 @@
     }
 
     h4 {
-      font-size: 1.1em;
+      font-size: 1.05em;
     }
 
     p,
@@ -216,17 +143,23 @@
     }
 
     .vertical-timeline-element-content {
-      padding: 12px;
+      padding: 16px;
     }
 
     .vertical-timeline-element-date {
       font-size: 0.85em;
     }
+  }
+}
 
-    .vertical-timeline-element-icon {
-      .svg-inline--fa {
-        font-size: 1.2em;
-      }
+@media screen and (max-width: 567px) {
+  .items-container h1 {
+    font-size: 1.8em;
+  }
+
+  .vertical-timeline-element {
+    .vertical-timeline-element-icon .svg-inline--fa {
+      font-size: 1.15em;
     }
   }
 }

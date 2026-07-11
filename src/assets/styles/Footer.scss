@@ -3,55 +3,41 @@
 footer {
   text-align: center;
   padding: 50px 10%;
-  background-color: transparent; /* Allow parent background */
-  transition: background-color 0.3s ease;
-
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-
-    a {
-      color: #ffffff; /* White for dark mode */
-      transition: color 0.3s ease, transform 0.2s ease;
-
-      &:hover {
-        color: #5000ca; /* Template’s primary color */
-        transform: scale(1.2); /* Slight scale effect */
-      }
-
-      svg {
-        width: 1.5em !important; /* Larger icons */
-        height: 1.5em !important;
-      }
-    }
-  }
-
-  p {
-    font-size: 0.9em;
-    color: #e0e0e0; /* Light gray for dark mode */
-    margin: 0;
-    font-weight: 400;
-  }
+  background-color: transparent;
+  border-top: 1px solid var(--line);
 }
 
-/* Light mode adjustments */
-.light-mode footer {
-  .social-icons a {
-    color: #121212; /* Dark icons for light mode */
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  a {
+    color: var(--text-mid);
+    transition: color 0.25s ease, transform 0.2s ease;
 
     &:hover {
-      color: #5000ca;
+      color: var(--cyan);
+      transform: scale(1.15) translateY(-2px);
     }
-  }
 
-  p {
-    color: #666; /* Darker gray */
+    svg {
+      width: 1.5em !important;
+      height: 1.5em !important;
+    }
   }
 }
 
-/* Responsive design */
+footer p {
+  font-size: 0.9em;
+  color: var(--text-low);
+  margin: 0;
+  font-weight: 400;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Responsive */
 @media screen and (max-width: 768px) {
   footer {
     padding: 40px 5%;

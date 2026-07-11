@@ -1,91 +1,83 @@
+/* src/assets/styles/Project.scss */
 .projects-container {
-  padding: 5% 10%;
+  padding: 100px 10% 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: transparent;
-  transition: background-color 0.3s ease;
-  min-height: 100vh; /* Ensure full viewport height */
+  min-height: 100vh;
 
   h1 {
-    font-size: 3em; /* Larger for emphasis */
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3em;
     margin-bottom: 50px;
-    color: #ffffff;
+    color: var(--text-hi);
     font-weight: 700;
-    text-transform: uppercase; /* Match Home.tsx style */
-    letter-spacing: 1px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-  }
-}
-
-/* Light mode adjustments */
-.light-mode .projects-container {
-  h1 {
-    color: #121212;
-    text-shadow: none; /* Remove shadow in light mode */
+    letter-spacing: -0.01em;
   }
 }
 
 .projects-container .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly wider cards */
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
   justify-items: center;
   width: 100%;
-  animation: fadeIn 1s ease-out; /* Fade-in animation for grid */
+  animation: fadeIn 1s ease-out;
 }
 
 .projects-container .projects-grid .project {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); /* Glassmorphism */
-  backdrop-filter: blur(8px); /* Glass effect */
+  background: var(--bg-panel);
   border-radius: 16px;
   padding: 24px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(159, 122, 234, 0.2); /* Purple border */
-  max-width: 400px; /* Limit card width */
-  opacity: 0; /* For fade-in animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid var(--line);
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
   animation: cardFadeIn 0.5s ease-out forwards;
-  animation-delay: calc(0.1s * var(--index)); /* Staggered animation */
+  animation-delay: calc(0.08s * var(--index));
 
   &:hover {
-    transform: translateY(-10px); /* Stronger lift effect */
-    box-shadow: 0 12px 32px rgba(124, 58, 237, 0.4); /* Purple glow */
+    transform: translateY(-8px);
+    border-color: var(--violet);
+    box-shadow: 0 16px 36px rgba(94, 234, 212, 0.12);
   }
 
   img.zoom {
     width: 100%;
-    height: 220px; /* Slightly taller for better visuals */
+    height: 200px;
     object-fit: cover;
     border-radius: 12px;
-    border: 2px solid rgba(159, 122, 234, 0.5); /* Purple border */
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid var(--line-soft);
+    transition: transform 0.4s ease;
 
     &:hover {
-      transform: scale(1.08); /* Smoother zoom */
-      box-shadow: 0 4px 16px rgba(124, 58, 237, 0.3); /* Purple glow */
+      transform: scale(1.05);
     }
   }
 
   h2 {
-    font-size: 1.9em;
-    margin: 20px 0 12px;
-    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5em;
+    margin: 18px 0 10px;
+    color: var(--text-hi);
     font-weight: 600;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #9f7aea; /* Purple to match theme */
-      text-decoration: none; /* Remove underline for cleaner look */
+      color: var(--cyan);
+      text-decoration: none;
     }
   }
 
   p {
-    font-size: 1.1em;
-    color: #e0e0e0;
-    line-height: 1.7;
-    margin: 0 0 20px; /* Space before button */
+    font-size: 0.98em;
+    color: var(--text-mid);
+    line-height: 1.65;
+    margin: 0 0 20px;
   }
 
   .glowy-button {
@@ -93,74 +85,39 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 24px;
-    font-size: 1.1em;
-    font-weight: 500;
-    color: white;
-    background: linear-gradient(to right, #6b46c1, #9f7aea); /* Match Home.tsx */
+    padding: 11px 22px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #04120f;
+    background: linear-gradient(100deg, #5eead4, #a78bfa 90%);
     border: none;
-    border-radius: 6px;
-    width: 100%; /* Full-width for consistency */
+    border-radius: 8px;
+    width: 100%;
     text-transform: none;
     transition: all 0.3s ease-out;
 
     &:hover {
-      background: linear-gradient(to right, #7c3aed, #b794f4);
-      box-shadow: 0 0 20px 5px rgba(124, 58, 237, 0.5); /* Purple glow */
+      box-shadow: 0 8px 26px rgba(94, 234, 212, 0.3);
+      transform: translateY(-2px);
     }
-  }
-}
-
-/* Light mode project adjustments */
-.light-mode .projects-container .projects-grid .project {
-  background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Light glass effect */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-
-  h2 {
-    color: #121212;
-  }
-
-  p {
-    color: #555;
-  }
-
-  img.zoom {
-    border-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .glowy-button {
-    background: linear-gradient(to right, #6b46c1, #9f7aea); /* Keep purple in light mode */
   }
 }
 
 /* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes cardFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive design */
+/* Responsive */
 @media screen and (max-width: 768px) {
   .projects-container {
-    padding: 5% 5%;
+    padding: 90px 5% 5%;
 
     h1 {
       font-size: 2.5em;
@@ -169,39 +126,15 @@
 
   .projects-container .projects-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 24px;
   }
 
   .projects-container .projects-grid .project {
     padding: 20px;
-    max-width: 100%; /* Full-width cards on mobile */
+    max-width: 100%;
 
     h2 {
-      font-size: 1.7em;
-    }
-
-    p {
-      font-size: 1em;
-    }
-
-    img.zoom {
-      height: 200px;
-    }
-  }
-}
-
-@media screen and (max-width: 567px) {
-  .projects-container {
-    padding: 5% 3%;
-
-    h1 {
-      font-size: 2em;
-    }
-  }
-
-  .projects-container .projects-grid .project {
-    h2 {
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
 
     p {
@@ -210,6 +143,16 @@
 
     img.zoom {
       height: 180px;
+    }
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .projects-container {
+    padding: 80px 3% 5%;
+
+    h1 {
+      font-size: 2em;
     }
   }
 }
