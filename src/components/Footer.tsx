@@ -9,7 +9,7 @@ import '../assets/styles/Footer.scss';
 function Footer() {
   return (
     <footer>
-      <div>
+      <div className="social-icons">
         <a href={INFO.socials.github} target="_blank" rel="noreferrer">
           <GitHubIcon />
         </a>
