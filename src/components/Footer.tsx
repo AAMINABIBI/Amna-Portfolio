@@ -2,7 +2,7 @@
 import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { INFO } from '../data/user';
 import '../assets/styles/Footer.scss';
 
@@ -17,7 +17,7 @@ function Footer() {
           <LinkedInIcon />
         </a>
         <a href={INFO.socials.whatsapp} target="_blank" rel="noreferrer">
-          <InstagramIcon />
+          <WhatsAppIcon />
         </a>
       </div>
       <p>{INFO.footer.copyright}</p>

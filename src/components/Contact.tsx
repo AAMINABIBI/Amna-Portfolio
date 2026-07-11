@@ -24,26 +24,17 @@ function Contact() {
     setMessageError(message === '');
 
     if (name && email && message) {
-      fetch('https://formspree.io/f/your-form-id', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, message }),
-      })
-        .then((response) => {
-          if (response.ok) {
-            console.log('SUCCESS!');
-            setName('');
-            setEmail('');
-            setMessage('');
-          } else {
-            console.error('FAILED...');
-          }
-        })
-        .catch((error) => {
-          console.error('FAILED...', error);
-        });
+      // NOTE: the previous Formspree endpoint ("your-form-id") was a placeholder and never worked.
+      // This opens the visitor's email client with everything pre-filled instead — works with no backend.
+      // To use Formspree for real later: sign up at formspree.io, get your real form ID, and replace
+      // this block with a fetch() POST to https://formspree.io/f/<your-real-id>.
+      const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+      const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
+      window.location.href = `mailto:${INFO.contact.email}?subject=${subject}&body=${body}`;
+
+      setName('');
+      setEmail('');
+      setMessage('');
     }
   };
 
