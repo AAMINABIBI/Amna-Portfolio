@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/Amna-Portfolio/static/css/main.701a7940.css",
-    "main.js": "/Amna-Portfolio/static/js/main.e02f36f3.js",
+    "main.css": "/Amna-Portfolio/static/css/main.86254f59.css",
+    "main.js": "/Amna-Portfolio/static/js/main.b813257e.js",
     "static/media/me3.png": "/Amna-Portfolio/static/media/me3.a0f464cc74d4fda1dd39.png",
-    "static/media/mock04.png": "/Amna-Portfolio/static/media/mock04.f7b5679efade992a078c.png",
+    "static/media/mock07.png": "/Amna-Portfolio/static/media/mock07.3f1110f482232b33c6a2.png",
     "static/media/mock05.png": "/Amna-Portfolio/static/media/mock05.4faafa70d200d1519a34.png",
     "static/media/Freelancers_portfolio.png": "/Amna-Portfolio/static/media/Freelancers_portfolio.0d10caaea625a3862a2c.png",
     "static/media/mock06.png": "/Amna-Portfolio/static/media/mock06.ea816617e0d0fa0f63ca.png",
-    "static/media/bg-dark.png": "/Amna-Portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/mock01.png": "/Amna-Portfolio/static/media/mock01.61bd486a54bf6e17ee5a.png",
     "static/media/E-commProj.png": "/Amna-Portfolio/static/media/E-commProj.5114b78c15eb57d45b2f.png",
+    "static/media/mock02.png": "/Amna-Portfolio/static/media/mock02.bced48ae9cdda3acf1a3.png",
+    "static/media/mock03.png": "/Amna-Portfolio/static/media/mock03.a4600719e0b5d2a3155b.png",
+    "static/media/calculator.png": "/Amna-Portfolio/static/media/calculator.1eb4d0d063ae91483251.png",
     "index.html": "/Amna-Portfolio/index.html",
-    "main.701a7940.css.map": "/Amna-Portfolio/static/css/main.701a7940.css.map",
-    "main.e02f36f3.js.map": "/Amna-Portfolio/static/js/main.e02f36f3.js.map"
+    "main.86254f59.css.map": "/Amna-Portfolio/static/css/main.86254f59.css.map",
+    "main.b813257e.js.map": "/Amna-Portfolio/static/js/main.b813257e.js.map"
   },
   "entrypoints": [
-    "static/css/main.701a7940.css",
-    "static/js/main.e02f36f3.js"
+    "static/css/main.86254f59.css",
+    "static/js/main.b813257e.js"
   ]
 }
